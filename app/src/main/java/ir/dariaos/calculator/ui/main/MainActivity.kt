@@ -1,6 +1,8 @@
 package ir.dariaos.calculator.ui.main
 
+import android.R.attr.colorPrimary
 import android.animation.*
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -358,6 +360,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         return super.onOptionsItemSelected(item)
     }
 
+    @SuppressLint("ResourceType")
     private fun showTutorial() {
         //close side panel before starting tutorial
         if (binding.calculatorPadViewPager?.currentItem == 1) {
@@ -370,13 +373,13 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 getString(R.string.delete_button),
                 getString(R.string.delete_button_desc)
             )
-            .outerCircleColor(R.color.primary)
+            .outerCircleColor(colorPrimary)
             .outerCircleAlpha(1f)
-            .targetCircleColor(R.color.white)
+            .targetCircleColor(colorPrimary)
             .titleTextSize(28)
             .tintTarget(false)
-            .titleTextColor(R.color.white)
-            .descriptionTextColor(R.color.white)
+            .titleTextColor(colorPrimary)
+            .descriptionTextColor(colorPrimary)
             .descriptionTextSize(18)
             .cancelable(true)
         val angle: TapTarget = TapTarget
@@ -386,7 +389,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 getString(R.string.angle_button),
                 getString(R.string.angle_button_desc)
             )
-            .outerCircleColor(R.color.primary)
+            .outerCircleColor(colorPrimary)
             .outerCircleAlpha(1f)
             .targetCircleColor(R.color.white)
             .titleTextSize(28)
@@ -401,7 +404,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 getString(R.string.options_menu),
                 getString(R.string.options_menu_desc)
             )
-            .outerCircleColor(R.color.primary)
+            .outerCircleColor(colorPrimary)
             .outerCircleAlpha(1f)
             .targetCircleColor(R.color.white)
             .titleTextSize(28)
@@ -418,7 +421,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                 getString(R.string.share_button),
                 getString(R.string.share_button_desc)
             )
-            .outerCircleColor(R.color.primary)
+            .outerCircleColor(colorPrimary)
             .outerCircleAlpha(1f)
             .targetCircleColor(R.color.white)
             .titleTextSize(28)

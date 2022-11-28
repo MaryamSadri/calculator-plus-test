@@ -9,7 +9,7 @@
         android:id="@+id/color_default"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primary"
+        android:background="?attr/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/color_green"
         app:layout_constraintTop_toTopOf="parent">
@@ -28,7 +28,7 @@
         android:id="@+id/color_green"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primaryGreen"
+        android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toStartOf="@id/color_purple"
         app:layout_constraintStart_toEndOf="@+id/color_default"
         app:layout_constraintTop_toTopOf="@+id/color_default">
@@ -47,7 +47,7 @@
         android:id="@+id/color_purple"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primaryPurple"
+        android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/color_green"
         app:layout_constraintTop_toTopOf="@+id/color_default">
@@ -66,7 +66,7 @@
         android:id="@+id/color_pink"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primaryPink"
+        android:background="?attr/colorPrimary"
         android:layout_marginTop="@dimen/space_xl"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/color_red"
@@ -86,7 +86,7 @@
         android:id="@+id/color_red"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primaryRed"
+        android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toStartOf="@id/color_grey"
         app:layout_constraintStart_toEndOf="@+id/color_pink"
         app:layout_constraintTop_toTopOf="@+id/color_pink">
@@ -105,7 +105,7 @@
         android:id="@+id/color_grey"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:background="@color/primaryGrey"
+        android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/color_red"
         app:layout_constraintTop_toTopOf="@+id/color_pink">

@@ -1,16 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme -->
-    <style name="BaseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.DariaCalculator" parent="Theme.Material3.Light.NoActionBar">
         <!-- Primary brand color -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primaryDark</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Color Themes -->
-        <item name="colorSurface">@color/surface</item>
-        <item name="colorError">@color/error</item>
-        <item name="android:colorBackground">@color/background</item>
-        <item name="colorOnSurface">@color/textPrimary</item>
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorError">@color/md_theme_light_error</item>
         <item name="colorOnError">@color/textAccent</item>
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <!-- Color Themes -->
         <!-- Custom Color Themes -->
         <item name="textPrimary">@color/textPrimary</item>
         <item name="textSecondary">@color/textSecondary</item>
@@ -18,7 +26,7 @@
         <item name="border">@color/border</item>
         <item name="textDisable">@color/textDisable</item>
         <item name="numPadPrimary">@color/numPadPrimary</item>
-        <item name="operatorBtnColor">@color/primary</item>
+        <item name="operatorBtnColor">@color/md_theme_light_primary</item>
         <item name="clearColor">@color/clear</item>
         <!-- Widget Themes -->
         <item name="materialAlertDialogTheme">
@@ -28,48 +36,16 @@
         <!-- Status bar Themes -->
         <item name="android:statusBarColor">?attr/colorSurface</item>
         <item name="android:windowLightStatusBar" tools:targetApi="m">?attr/isLightTheme</item>
-    </style>
-
-    <style name="MaterialGreenTheme" parent="BaseTheme">
-        <item name="colorPrimary">@color/primaryGreen</item>
-        <item name="colorPrimaryVariant">@color/primaryGreenVariant</item>
-        <item name="operatorBtnColor">@color/primaryGreen</item>
-        <item name="clearColor">@color/primaryGreenClear</item>
-    </style>
-
-    <style name="MaterialRedTheme" parent="BaseTheme">
-        <item name="colorPrimary">@color/primaryRed</item>
-        <item name="colorPrimaryVariant">@color/primaryRedVariant</item>
-        <item name="operatorBtnColor">@color/primaryRed</item>
-        <item name="clearColor">@color/primaryRedClear</item>
-    </style>
-
-    <style name="MaterialPurpleTheme" parent="BaseTheme">
-        <item name="colorPrimary">@color/primaryPurple</item>
-        <item name="colorPrimaryVariant">@color/primaryPurpleVariant</item>
-        <item name="operatorBtnColor">@color/primaryPurple</item>
-        <item name="clearColor">@color/primaryPurpleClear</item>
-    </style>
-
-    <style name="MaterialGreyTheme" parent="BaseTheme">
-        <item name="colorPrimary">@color/primaryGrey</item>
-        <item name="colorPrimaryVariant">@color/primaryGreyVariant</item>
-        <item name="operatorBtnColor">@color/primaryGrey</item>
-        <item name="clearColor">@color/primaryGreyClear</item>
-    </style>
-
-    <style name="MaterialPinkTheme" parent="BaseTheme">
-        <item name="colorPrimary">@color/primaryPink</item>
-        <item name="colorPrimaryVariant">@color/primaryPinkVariant</item>
-        <item name="operatorBtnColor">@color/primaryPink</item>
-        <item name="clearColor">@color/primaryPinkClear</item>
+        <!--navigationBar Themes-->
+        <item name="android:navigationBarColor">@color/md_theme_light_background</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
     </style>
 
     <!-- Widget Styles -->
     <style name="Widget.CalculatorPlus.NumPad.Secondary" parent="Widget.MaterialComponents.Button">
         <item name="cornerRadius">@dimen/button_corner_radius</item>
         <item name="android:textColor">?attr/colorOnPrimary</item>
-        <item name="backgroundTint">?attr/operatorBtnColor</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="iconPadding">0dp</item>
@@ -89,7 +65,7 @@
     </style>
 
     <style name="Widget.CalculatorPlus.NumPad.Primary.IconOnly" parent="Widget.CalculatorPlus.NumPad.Primary">
-        <item name="android:tint">?attr/operatorBtnColor</item>
+        <item name="android:tint">?attr/colorPrimary</item>
         <item name="android:gravity">center</item>
         <item name="android:background">@drawable/button_ripple</item>
     </style>
@@ -97,7 +73,7 @@
     <style name="ThemeOverlay.CalculatorPlus.MaterialAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
         <item name="colorPrimary">?attr/operatorBtnColor</item>
         <item name="colorSecondary">?attr/operatorBtnColor</item>
-        <item name="colorSurface">@color/background</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
         <item name="colorOnSurface">@color/textPrimary</item>
     </style>
 

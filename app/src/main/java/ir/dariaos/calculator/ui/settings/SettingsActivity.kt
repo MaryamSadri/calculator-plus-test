@@ -16,7 +16,7 @@ import ir.dariaos.calculator.databinding.ColorDialogBinding
 import ir.dariaos.calculator.databinding.PrecisionDialogBinding
 import ir.dariaos.calculator.ui.about.AboutActivity
 import ir.dariaos.calculator.ui.base.BaseActivity
-import ir.dariaos.calculator.ui.main.MainActivity
+import ir.dariaos.calculator.ui.main.*
 import ir.dariaos.calculator.ui.settings.helper.getString
 import ir.dariaos.calculator.ui.settings.viewmodel.SettingsViewModel
 import ir.dariaos.calculator.util.*
