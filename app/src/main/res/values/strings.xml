@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Calculator Plus</string>
+    <string name="app_name" translatable="false">Calculator</string>
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_history">History</string>
     <string name="show_tutorial">Show Tutorial</string>
