@@ -8,7 +8,7 @@
     android:clipToPadding="false"
     android:background="?attr/colorSurface">
 
-    <com.gigaworks.tech.calculator.ui.view.CalculatorEditText
+    <ir.dariaos.calculator.ui.view.CalculatorEditText
         android:id="@+id/expression"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@id/result"
         tools:text="200+50058" />
 
-    <com.gigaworks.tech.calculator.ui.view.CalculatorEditText
+    <ir.dariaos.calculator.ui.view.CalculatorEditText
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

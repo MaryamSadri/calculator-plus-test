@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gigaworks.tech.calculator">
+    package="ir.dariaos.calculator">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,7 +12,7 @@
     </queries>
 
     <application
-        android:name=".ui.MainApplication"
+        android:name="ir.dariaos.calculator.ui.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,16 +20,16 @@
         android:supportsRtl="true"
         android:theme="@style/BaseTheme">
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="ir.dariaos.calculator.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.settings.SettingsActivity" />
-        <activity android:name=".ui.history.HistoryActivity" />
-        <activity android:name=".ui.about.AboutActivity" />
+        <activity android:name="ir.dariaos.calculator.ui.settings.SettingsActivity" />
+        <activity android:name="ir.dariaos.calculator.ui.history.HistoryActivity" />
+        <activity android:name="ir.dariaos.calculator.ui.about.AboutActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

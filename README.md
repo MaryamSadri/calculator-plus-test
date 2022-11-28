@@ -65,7 +65,7 @@ This app is totally free with no ads whatsoever. If you like this project and wa
 
 ## Download ⬇️
 Download the latest Version of the app from the play store.  
-<a href='https://play.google.com/store/apps/details?id=com.gigaworks.tech.calculator&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="100" width="250"/>
+<a href='https://play.google.com/store/apps/details?id=ir.dariaos.calculator&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height="100" width="250"/>
 
 ## License 🔖
 ```
