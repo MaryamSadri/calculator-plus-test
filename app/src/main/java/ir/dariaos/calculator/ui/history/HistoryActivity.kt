@@ -26,7 +26,7 @@ class HistoryActivity : BaseActivity<ActivityHistoryBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setSupportActionBar(binding.toolbar)
+//        setSupportActionBar(binding.toolbar)
 
         setupView()
         setupObservables()
@@ -95,7 +95,7 @@ class HistoryActivity : BaseActivity<ActivityHistoryBinding>() {
     }
 
     private fun setupView() {
-        binding.toolbar.setNavigationOnClickListener { handleBackPress() }
+//        binding.toolbar.setNavigationOnClickListener { handleBackPress() }
     }
 
     override fun onBackPressed() {

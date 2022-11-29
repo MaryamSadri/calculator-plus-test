@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="Yesterday"
-        android:textAppearance="@style/TextAppearance.CalculatorPlus.Subtitle1"
+        android:textAppearance="@style/TextAppearance.CalculatorPlus.Body2"
         android:textColor="?attr/operatorBtnColor"
         android:gravity="start"
         android:layout_marginStart="@dimen/space_xl"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         tools:text="3+3"
         android:textColor="?attr/textPrimary"
-        android:textAppearance="@style/TextAppearance.CalculatorPlus.Headline3"
+        android:textAppearance="@style/TextAppearance.CalculatorPlus.Body2"
         android:singleLine="true"
         android:background="@null"
         android:focusable="false"
@@ -38,8 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="6"
-        android:textColor="?attr/textDisable"
-        android:textAppearance="@style/TextAppearance.CalculatorPlus.Headline4"
+        android:textColor="?attr/colorPrimary"
+        android:textAppearance="@style/TextAppearance.CalculatorPlus.Body2"
         android:singleLine="true"
         android:background="@null"
         android:focusable="false"
@@ -50,10 +50,6 @@
         android:layout_marginTop="@dimen/space_sm"
         android:layout_marginBottom="@dimen/space_m" />
 
-    <View
-        android:id="@+id/border"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?attr/border" />
+
 
 </LinearLayout>

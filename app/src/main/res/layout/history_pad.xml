@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,11 +8,41 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
         android:background="?android:attr/colorBackground"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintEnd_toStartOf="@id/border"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clearHistory"
+        />
+
+    <TextView
+        android:id="@+id/clearHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear history"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/md_theme_light_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/border"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="4dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/rv" />
 
     <FrameLayout
         android:id="@+id/noHistory"
@@ -46,4 +76,4 @@
 
     </FrameLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,7 +44,7 @@ class HistoryAdapter(
                     date.visible(false)
                 }
                 if (history.isNextSame) {
-                    border.visible(false)
+//                    border.visible(false)
                 }
                 date.text = history.date
                 expression.text = history.expression

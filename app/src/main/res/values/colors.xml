@@ -21,7 +21,7 @@
     <color name="md_theme_dark_primary">#D0BCFF</color>
     <color name="md_theme_dark_onPrimary">#381E72</color>
     <color name="md_theme_dark_primaryContainer">#D0BCFF</color>
-    <color name="md_theme_dark_onPrimaryContainer">#381E72</color>
+    <color name="md_theme_dark_onPrimaryContainer">#1C1B1F</color>
     <color name="md_theme_dark_secondary">#CBC2DB</color>
     <color name="md_theme_dark_onSecondary">#332D41</color>
     <color name="md_theme_dark_tertiary">#FF842A</color>
